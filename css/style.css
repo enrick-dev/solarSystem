@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* Background */
+body {
+  background-image: url(../assets/background/background_stars.svg);
+  background-color: #08182A;
+}
+body .detailBackground {
+  background-image: url(../assets/background/DetailBackground.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: left;
+
+}
