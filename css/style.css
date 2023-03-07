@@ -19,8 +19,19 @@ body .detailBackground {
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: left;
+  background-size: 45%;
   height: 100vh;
 }
+
+
+/* Circulo do Sistema solar por nequanto */
+.testeCirculo {
+  border: 5px solid #f1f1f1; 
+  width: 976px; 
+  height: 972.86px; 
+  border-radius: 1000px;
+}
+
 
 /* Main Container */
 .mainContainer {
@@ -63,4 +74,34 @@ body .detailBackground {
   text-transform: uppercase;
   line-height: 100%;
   color: #B8BCC1;
+}
+
+
+/* Responsividade notebook lele */
+@media screen and ( max-width: 1536px) {
+/* Circulo do Sistema solar por nequanto */
+.testeCirculo {
+  border: 3.5px solid #f1f1f1; 
+  width: 702px;
+  height: 700px;
+}
+
+
+/* Main Container */
+.mainContainer {
+  padding-top: 50px;
+}
+
+/* Introdução e Bem vindo */
+.textContent h1 {
+  font-size: 9.2rem;
+}
+.textContent p:nth-child(2) {
+  font-size: 2.5rem;
+}
+.textContent p:nth-child(3) {
+  font-size: 2.3rem;
+}
+
+
 }
