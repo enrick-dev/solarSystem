@@ -13,13 +13,14 @@ html {
 body {
   background-image: url(../assets/background/background_stars.svg);
   background-color: #08182A;
+  background-size: 192rem;
 }
 body .detailBackground {
   background-image: url(../assets/background/DetailBackground.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: left;
-  background-size: 45%;
+  background-size: 89.2rem;
   height: 100vh;
 }
 
@@ -52,6 +53,12 @@ body .detailBackground {
   grid-row: 1/3;
 }
 
+
+/* logo */
+.logoImg {
+  width: 48.8rem;
+}
+
 /* Introdução e Bem vindo */
 .introductionContainer {
   color: #f1f1f1;
@@ -79,6 +86,14 @@ body .detailBackground {
 
 /* Responsividade notebook lele */
 @media screen and ( max-width: 1536px) {
+/* Background- */
+body {
+  background-size: 138.2rem;
+}
+body .detailBackground {
+  background-size: 64.2rem;
+}
+
 /* Circulo do Sistema solar por nequanto */
 .testeCirculo {
   border: 3.5px solid #f1f1f1; 
@@ -90,6 +105,11 @@ body .detailBackground {
 /* Main Container */
 .mainContainer {
   padding-top: 50px;
+}
+
+/* logo */
+.logoImg {
+  width: 35.1rem;
 }
 
 /* Introdução e Bem vindo */
