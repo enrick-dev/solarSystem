@@ -25,14 +25,6 @@ body .detailBackground {
 }
 
 
-/* Circulo do Sistema solar por nequanto */
-.testeCirculo {
-  border: 5px solid #f1f1f1; 
-  width: 976px; 
-  height: 972.86px; 
-  border-radius: 1000px;
-}
-
 
 /* Main Container */
 .mainContainer {
@@ -105,6 +97,39 @@ body .detailBackground {
 }
 
 
+/* Sistema Solar */
+
+.containerPlutoCircle {
+  border: 5px solid #f1f1f1; 
+  width: 97.6px; 
+  height: 97.2px; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+.containerPluto {
+  width: 0.2%;
+  height: 100%;
+  position: absolute;
+  z-index: 6;
+}
+.planetPluto {
+  left: -1.93rem;
+  top: -1.93rem;
+  width: 3.87rem;
+  height: 3.87rem;
+  position: absolute;
+  z-index: 10;
+}
+.containerPluto:hover {
+  transform: rotate(360deg);
+  transition: 2s linear;
+} 
+
+
 /* Responsividade notebook lele */
 @media screen and ( max-width: 1536px) {
   /* Background- */
@@ -115,12 +140,6 @@ body .detailBackground {
     background-size: 64.2rem;
   }
 
-  /* Circulo do Sistema solar por nequanto */
-  .testeCirculo {
-    border: 3.5px solid #f1f1f1; 
-    width: 702px;
-    height: 700px;
-  }
 
 
   /* Main Container */
@@ -154,4 +173,18 @@ body .detailBackground {
     font-size: 1.9rem;
   }
 
+  /* Sistema Solar */
+  .containerPlutoCircle {
+    border: 3.5px solid #f1f1f1; 
+    width: 70.2rem;
+    height: 70.0rem;
+  }
+
+  .planetPluto {
+    left: -1.39rem;
+    top: -1.39rem;
+    width: 2.78rem;
+    height: 2.78rem;
+  }
 }
+
