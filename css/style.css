@@ -98,23 +98,32 @@ body .detailBackground {
 
 
 /* Sistema Solar */
+.solarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.containerPlutoCircle {
+.containerCircle {
   border: 5px solid #f1f1f1; 
-  width: 97.6px; 
-  height: 97.2px; 
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-
+  position: absolute;
 }
-.containerPluto {
+.containerPlanets {
   width: 0.2%;
   height: 100%;
   position: absolute;
   z-index: 6;
+}
+
+/* Plutão */
+.containerPlutoCircle {
+  width: 97.6rem; 
+  height: 97.2rem; 
+  position: relative;
 }
 .planetPluto {
   left: -1.93rem;
@@ -125,9 +134,39 @@ body .detailBackground {
   z-index: 10;
 }
 .containerPluto:hover {
-  transform: rotate(360deg);
-  transition: 2s linear;
+  transform: rotate(6000deg);
+  transition: 200s linear;
 } 
+
+/* Netuno */
+.containerNeptuneCircle {
+  width: 88.1rem; 
+  height: 87.8rem; 
+}
+.planetNeptune {
+  left: -2.68rem;
+  top: -2.68rem;
+  width: 5.36rem;
+  height: 5.36rem;
+  position: absolute;
+  z-index: 10;
+}
+
+/* Urano */
+
+.containerUranusCircle {
+  width: 78.6rem; 
+  height: 78.3rem; 
+}
+.planetUranus {
+  left: -2.89rem;
+  top: -2.89rem;
+  width: 5.79rem;
+  height: 5.79rem;
+  position: absolute;
+  z-index: 10;
+}
+
 
 
 /* Responsividade notebook lele */
@@ -174,8 +213,12 @@ body .detailBackground {
   }
 
   /* Sistema Solar */
-  .containerPlutoCircle {
+  .containerCircle {
     border: 3.5px solid #f1f1f1; 
+  }
+
+  /* Plutão */
+  .containerPlutoCircle {
     width: 70.2rem;
     height: 70.0rem;
   }
@@ -186,5 +229,30 @@ body .detailBackground {
     width: 2.78rem;
     height: 2.78rem;
   }
+
+  /* Netuno */
+  .containerNeptuneCircle {
+    width: 63.4rem; 
+    height: 63.2rem; 
+  }
+  .planetNeptune {
+    left: -1.9rem;
+    top: -1.9rem;
+    width: 3.85rem;
+    height: 3.85rem;
+  }
+  
+  /* Urano */
+  .containerUranusCircle {
+    width: 56.5rem; 
+    height: 56.3rem; 
+  }
+  .planetUranus {
+    left: -2.08rem;
+    top: -2.08rem;
+    width: 4.16rem;
+    height: 4.16rem;
+  }
+
 }
 
