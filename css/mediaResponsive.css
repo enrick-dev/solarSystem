@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+/* Responsividade notebook lele */
+@media screen and ( max-width: 1536px) {
+  /* Background- */
+  body {
+    background-size: 138.2rem;
+  }
+  body .detailBackground {
+    background-size: 64.2rem;
+  }
+
+
+
+  /* Main Container */
+  .mainContainer {
+    padding-top: 36px;
+  }
+
+  /* logo */
+  .logoImg {
+    width: 35.1rem;
+  }
+
+  /* Introdução e Bem vindo */
+  .textContent h1 {
+    font-size: 9.2rem;
+  }
+  .textContent p:nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .textContent p:nth-child(3) {
+    font-size: 2.3rem;
+    width: 51rem;
+  }
+  
+  .clickTextContent {
+    width: 24.3rem;
+    border-bottom: 0.36rem solid #f2f2f2;
+  }
+  .clickTextContent p {
+    width: 21.6rem;
+    font-size: 1.9rem;
+  }
+
+  /* Sistema Solar */
+  .containerCircle {
+    border: 3.5px solid #f1f1f1; 
+  }
+
+  /* Plutão */
+  .containerPlutoCircle {
+    width: 70.2rem;
+    height: 70.0rem;
+  }
+
+  .planetPluto {
+    left: -1.39rem;
+    top: -1.39rem;
+    width: 2.78rem;
+    height: 2.78rem;
+  }
+
+  /* Netuno */
+  .containerNeptuneCircle {
+    width: 63.4rem; 
+    height: 63.2rem; 
+  }
+  .planetNeptune {
+    left: -1.9rem;
+    top: -1.9rem;
+    width: 3.85rem;
+    height: 3.85rem;
+  }
+  
+  /* Urano */
+  .containerUranusCircle {
+    width: 56.5rem; 
+    height: 56.3rem; 
+  }
+  .planetUranus {
+    left: -2.08rem;
+    top: -2.08rem;
+    width: 4.16rem;
+    height: 4.16rem;
+  } 
+
+  /* Saturno */
+  .containerSaturnCircle {
+    width: 49.7rem; 
+    height: 49.5rem; 
+  }
+  .planetSaturn {
+    left: -3.88rem;
+    top: -3.28rem;
+    width: 7.77rem;
+    height: 6.56rem;
+  }
+
+}
