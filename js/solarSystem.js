@@ -1,7 +1,3 @@
-
-let sizeBorderPlanets 
-
-// -9.5
 const planets = [
   {
     name: 'Pluto',
@@ -59,9 +55,11 @@ const planets = [
   },
 ]
 
+let topPlanet = [];
+let leftPlanet = [];
+let sizeBorderPlanets = [97.6];
 
-
-planets.filter((planet) => {
+planets.filter((planet, index) => {
   let containerSolarSystem = document.querySelector('.solarContainer');
 
   let containerDiv = document.createElement('div');
@@ -80,4 +78,36 @@ planets.filter((planet) => {
   img.src = `./assets/planets/${planet.name}.svg`
   img.alt = `${planet.alt}`
 
+
+  if(index > 0) {
+    sizeBorderPlanets[index] = sizeBorderPlanets[index-1] - 9.5;
+  }
+  
+  leftPlanet[index] = planet.width / 2;
+  topPlanet[index] = planet.height / 2;
+  // console.log(sizeBorderPlanetsArray[index].toFixed(1))
+  containerDiv.style.width = `${sizeBorderPlanets[index].toFixed(1)}rem`;
+  containerDiv.style.height = `${sizeBorderPlanets[index].toFixed(1)}rem`;
+  
+  img.style.width = `${planet.width}rem`;
+  img.style.height = `${planet.height}rem`;
+  img.style.left = `-${leftPlanet[index].toFixed(2)}rem`;
+  img.style.top = `-${topPlanet[index].toFixed(2)}rem`;
+  img.style.position = 'absolute';
+  
+
+  // let mainContainer = document.querySelector('.mainContainer');
+  // mainContainer.innerHTML = `
+  //   <style>
+  //     .containerPlanets{
+  //       -webkit-animation: spin 1s linear infinite;
+  //       -moz-animation: spin 1s linear infinite;
+  //       animation: spin 2s linear infinite;
+  //     }
+  //   </style>`
+
+
+  
+
 })
+

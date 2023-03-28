@@ -124,63 +124,44 @@ body .detailBackground {
 
 /* Plutão */
 .containerPlutoCircle {
-  width: 97.6rem; 
-  height: 97.2rem; 
   position: relative;
 }
 .planetPluto {
-  left: -1.93rem;
-  top: -1.93rem;
-  width: 3.87rem;
-  height: 3.87rem;
-  position: absolute;
   z-index: 10;
 }
-.containerPluto:hover {
-  transform: rotate(6000deg);
-  transition: 200s linear;
-} 
+ 
+@-webkit-keyframes spin {
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
 
 /* Netuno */
 .containerNeptuneCircle {
-  width: 88.1rem; 
-  height: 87.8rem; 
+  position: absolute;
 }
 .planetNeptune {
-  left: -2.68rem;
-  top: -2.68rem;
-  width: 5.36rem;
-  height: 5.36rem;
-  position: absolute;
   z-index: 10;
 }
 
 /* Urano */
 
 .containerUranusCircle {
-  width: 78.6rem; 
-  height: 78.3rem; 
+  position: absolute;
 }
 .planetUranus {
-  left: -2.89rem;
-  top: -2.89rem;
-  width: 5.79rem;
-  height: 5.79rem;
-  position: absolute;
   z-index: 10;
 }
 
 /* Saturno */
 
 .containerSaturnCircle {
-  width: 69.1rem; 
-  height: 68.8rem; 
+  position: absolute;
 }
 .planetSaturn {
-  left: -5.4rem;
-  top: -4.56rem;
-  width: 10.8rem;
-  height: 9.12rem;
-  position: absolute;
   z-index: 10;
 }
