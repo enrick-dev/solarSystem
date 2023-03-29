@@ -109,11 +109,10 @@ planets.filter((planet, index) => {
   let planetsAnimation = document.querySelector(`.container${planet.name}`);
 
   planetsAnimation.style.animation = `spin ${planet.veloc}s linear infinite`;
+  planetsAnimation.style.webkitAnimation = `spin ${planet.veloc}s linear infinite`;
+  planetsAnimation.style.mozAnimation = `spin ${planet.veloc}s linear infinite`;
   planetsAnimation.style.rotate = `${planet.veloc / 2}deg`
 
-
-
-  
 
 })
 
