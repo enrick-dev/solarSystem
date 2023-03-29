@@ -1,3 +1,15 @@
+
+// 1920 = 97.6 = 100%
+// 19,20 = 0.976 = 1%
+// 
+let sizeWindowWidth = window.innerWidth;;
+
+let calc = sizeWindowWidth / 19.20;
+let calc2 = calc * 0.976
+
+console.log(calc2);
+
+
 const planets = [
   {
     name: 'Pluto',
@@ -67,7 +79,7 @@ const planets = [
 let mainContainer = document.querySelector('.estiloModificadoPorJs');
 let topPlanet = [];
 let leftPlanet = [];
-let sizeBorderPlanets = [97.6];
+let sizeBorderPlanets = [calc2];
 
 planets.filter((planet, index) => {
   let containerSolarSystem = document.querySelector('.solarContainer');
@@ -116,7 +128,4 @@ planets.filter((planet, index) => {
 
 })
 
-// 1920 = 97.6 = 100%
-// 19,20 = 0.976 = 1%
-// 
 
