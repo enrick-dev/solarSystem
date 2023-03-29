@@ -159,7 +159,6 @@ body .detailBackground {
 @keyframes spin{
   100%{-webkit-transform: rotate(360deg);}
 }
-
 .containerSol {
   position: absolute;
 }
