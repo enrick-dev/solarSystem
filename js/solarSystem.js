@@ -111,8 +111,12 @@ planets.filter((planet, index) => {
   planetsAnimation.style.animation = `spin ${planet.veloc}s linear infinite`;
   planetsAnimation.style.webkitAnimation = `spin ${planet.veloc}s linear infinite`;
   planetsAnimation.style.mozAnimation = `spin ${planet.veloc}s linear infinite`;
-  planetsAnimation.style.rotate = `${planet.veloc / 2}deg`
+  planetsAnimation.style.rotate = `${planet.veloc / 2}deg`;
 
 
 })
+
+// 1920 = 97.6 = 100%
+// 19,20 = 0.976 = 1%
+// 
 
