@@ -1,63 +1,85 @@
+
+// 1920 = 97.6 = 100%
+// 19,20 = 0.976 = 1%
+// 
+let sizeWindowWidth = window.innerWidth;;
+
+let calc = sizeWindowWidth / 19.20;
+let calc2 = calc * 0.976
+
+console.log(calc2);
+
+
 const planets = [
   {
     name: 'Pluto',
     width: 3.87,
     height: 3.87,
-    alt: 'Planeta Anão Plutão'
+    alt: 'Planeta Anão Plutão',
+    veloc: 7376 / 8
   },
   {
     name: 'Neptune',
     width: 5.36,
     height: 5.36,
-    alt: 'Planeta Netuno'
+    alt: 'Planeta Netuno',
+    veloc: 4537 / 8
   },
   {
     name: 'Uranus',
     width: 5.79,
     height: 5.79,
-    alt: 'Planeta Urano'
+    alt: 'Planeta Urano',
+    veloc: 3006 / 8
   },
   {
     name: 'Saturn',
     width: 10.8,
     height: 9.12,
-    alt: 'Planeta Saturno'
+    alt: 'Planeta Saturno',
+    veloc: 1503 / 8
   },
   {
     name: 'Jupiter',
     width: 7.95,
     height: 7.95,
-    alt: 'Planeta Jupiter'
+    alt: 'Planeta Jupiter',
+    veloc: 816 / 8
   },
   {
     name: 'Marte',
     width: 4.65,
     height: 4.65,
-    alt: 'Planeta Marte'
+    alt: 'Planeta Marte',
+    veloc: 249 / 8
   },
   {
     name: 'Terra',
     width: 5.58,
     height: 5.58,
-    alt: 'Planeta Terra'
+    alt: 'Planeta Terra',
+    veloc: 152 / 8
   },
   {
     name: 'Venus',
     width: 4.84,
     height: 4.84,
-    alt: 'Planeta Venus'
+    alt: 'Planeta Venus',
+    veloc: 108 / 8
   },
   {
     name: 'Mercurio',
     width: 3.99,
     height: 3.99,
-    alt: 'Planeta Mercurio'
+    alt: 'Planeta Mercurio',
+    veloc: 69 / 8
   },
 ]
 
+let mainContainer = document.querySelector('.estiloModificadoPorJs');
 let topPlanet = [];
 let leftPlanet = [];
-let sizeBorderPlanets = [97.6];
+let sizeBorderPlanets = [calc2];
 
 planets.filter((planet, index) => {
   let containerSolarSystem = document.querySelector('.solarContainer');
@@ -96,18 +118,14 @@ planets.filter((planet, index) => {
   img.style.position = 'absolute';
   
 
-  // let mainContainer = document.querySelector('.mainContainer');
-  // mainContainer.innerHTML = `
-  //   <style>
-  //     .containerPlanets{
-  //       -webkit-animation: spin 1s linear infinite;
-  //       -moz-animation: spin 1s linear infinite;
-  //       animation: spin 2s linear infinite;
-  //     }
-  //   </style>`
+  let planetsAnimation = document.querySelector(`.container${planet.name}`);
 
+  planetsAnimation.style.animation = `spin ${planet.veloc}s linear infinite`;
+  planetsAnimation.style.webkitAnimation = `spin ${planet.veloc}s linear infinite`;
+  planetsAnimation.style.mozAnimation = `spin ${planet.veloc}s linear infinite`;
+  planetsAnimation.style.rotate = `${planet.veloc / 2}deg`;
 
-  
 
 })
+
 

@@ -129,7 +129,27 @@ body .detailBackground {
 .planetPluto {
   z-index: 10;
 }
- 
+/* Netuno */
+.containerNeptuneCircle {
+  position: absolute;
+}
+.planetNeptune {
+  z-index: 10;
+}
+/* Urano */
+.containerUranusCircle {
+  position: absolute;
+}
+.planetUranus {
+  z-index: 10;
+}
+/* Saturno */
+.containerSaturnCircle {
+  position: absolute;
+}
+.planetSaturn {
+  z-index: 10;
+}
 @-webkit-keyframes spin {
   100%{-webkit-transform: rotate(360deg);}
 }
@@ -139,29 +159,6 @@ body .detailBackground {
 @keyframes spin{
   100%{-webkit-transform: rotate(360deg);}
 }
-
-/* Netuno */
-.containerNeptuneCircle {
+.containerSol {
   position: absolute;
-}
-.planetNeptune {
-  z-index: 10;
-}
-
-/* Urano */
-
-.containerUranusCircle {
-  position: absolute;
-}
-.planetUranus {
-  z-index: 10;
-}
-
-/* Saturno */
-
-.containerSaturnCircle {
-  position: absolute;
-}
-.planetSaturn {
-  z-index: 10;
 }
