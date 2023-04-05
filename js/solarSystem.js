@@ -5,71 +5,71 @@
 let sizeWindowWidth = window.innerWidth;;
 let calcWindowSize = sizeWindowWidth / 19.20;
 
-let sizeBorderCalc = calcWindowSize * 0.999;
-let sizeSpaceBorderCalc = calcWindowSize * 0.095;
+let sizeBorderCalc = calcWindowSize * 0.916;
+let sizeSpaceBorderCalc = calcWindowSize * 0.090;
 
 
 const planets = [
   {
     name: 'pluto',
-    width: 3.87,
-    height: 3.87,
+    width: 3.64,
+    height: 3.67,
     alt: 'Planeta Anão Plutão',
     veloc: 7376 / 5.2
   },
   {
     name: 'neptune',
-    width: 5.36,
-    height: 5.36,
+    width: 5.04,
+    height: 5.04,
     alt: 'Planeta Netuno',
     veloc: 4537 / 5.2
   },
   {
     name: 'uranus',
-    width: 5.79,
-    height: 5.79,
+    width: 5.44,
+    height: 5.44,
     alt: 'Planeta Urano',
     veloc: 3006 / 5.2
   },
   {
     name: 'saturn',
-    width: 10.8,
-    height: 9.12,
+    width: 10.14,
+    height: 8.56,
     alt: 'Planeta Saturno',
     veloc: 1503 / 5.2
   },
   {
     name: 'jupiter',
-    width: 7.95,
-    height: 7.95,
+    width: 7.47,
+    height: 7.47,
     alt: 'Planeta Jupiter',
     veloc: 816 / 5.2
   },
   {
     name: 'marte',
-    width: 4.65,
-    height: 4.65,
+    width: 4.37,
+    height: 4.37,
     alt: 'Planeta Marte',
     veloc: 249 / 5.2
   },
   {
     name: 'terra',
-    width: 5.58,
-    height: 5.58,
+    width: 5.24,
+    height: 5.24,
     alt: 'Planeta Terra',
     veloc: 152 / 5.2
   },
   {
     name: 'venus',
-    width: 4.84,
-    height: 4.84,
+    width: 4.55,
+    height: 4.55,
     alt: 'Planeta Venus',
     veloc: 108 / 5.2
   },
   {
     name: 'mercurio',
-    width: 3.99,
-    height: 3.99,
+    width: 3.75,
+    height: 3.75,
     alt: 'Planeta Mercurio',
     veloc: 69 / 5.2
   },
@@ -127,7 +127,7 @@ planets.filter((planet, index) => {
 })
 
 // Responsividade
-if(sizeWindowWidth < 1920) {
+if(sizeWindowWidth < 1600) {
 
 
   // Tamanho dos Planetas

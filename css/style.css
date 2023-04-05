@@ -60,6 +60,7 @@ body .detailBackground {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  user-select: none;
 }
 .textContent h1 {
   font-size: 12.8rem;
@@ -120,6 +121,7 @@ body .detailBackground {
   height: 100%;
   position: absolute;
   z-index: 6;
+  user-select: none;
 }
 
 /* Plutão */
@@ -161,4 +163,9 @@ body .detailBackground {
 }
 .containerSol {
   position: absolute;
+  user-select: none;
+}
+.containerSol img {
+  width: 32.21rem;
+  height: 32.21rem;
 }
