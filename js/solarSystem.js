@@ -3,9 +3,10 @@
 // 19,20 = 0.976 = 1%
 // 
 let sizeWindowWidth = window.innerWidth;;
+let calcWindowSize = sizeWindowWidth / 19.20;
 
-let calc = sizeWindowWidth / 19.20;
-let calc2 = calc * 0.976
+let sizeBorderCalc = calcWindowSize * 0.999;
+let sizeSpaceBorderCalc = calcWindowSize * 0.095;
 
 
 const planets = [
@@ -77,7 +78,7 @@ const planets = [
 let mainContainer = document.querySelector('.estiloModificadoPorJs');
 let topPlanet = [];
 let leftPlanet = [];
-let sizeBorderPlanets = [calc2];
+let sizeBorderPlanets = [sizeBorderCalc];
 
 // Criação de toda a construção do sistema Solar
 planets.filter((planet, index) => {
@@ -96,17 +97,16 @@ planets.filter((planet, index) => {
   containerDiv.className = `containerCircle container${planet.name}Circle`
   contentDiv.className = `containerPlanets container${planet.name}`
   img.className = `planet${planet.name}`
-  img.src = `./assets/planets/${planet.name}.svg`
+  img.src = `../assets/planets/${planet.name}.svg`
   img.alt = `${planet.alt}`
 
 
   if(index > 0) {
-    sizeBorderPlanets[index] = sizeBorderPlanets[index-1] - 9.5;
+    sizeBorderPlanets[index] = sizeBorderPlanets[index-1] - sizeSpaceBorderCalc;
   }
   
   leftPlanet[index] = planet.width / 2;
   topPlanet[index] = planet.height / 2;
-  // console.log(sizeBorderPlanetsArray[index].toFixed(1))
   containerDiv.style.width = `${sizeBorderPlanets[index].toFixed(1)}rem`;
   containerDiv.style.height = `${sizeBorderPlanets[index].toFixed(1)}rem`;
   
