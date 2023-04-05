@@ -108,7 +108,7 @@ body .detailBackground {
 }
 
 .containerCircle {
-  border: 5px solid #f1f1f1; 
+  border: 3.6px solid #f1f1f1; 
   border-radius: 50%;
   display: flex;
   align-items: center;
