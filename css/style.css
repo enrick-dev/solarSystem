@@ -123,31 +123,31 @@ body .detailBackground {
 }
 
 /* Plutão */
-.containerPlutoCircle {
+.containerplutoCircle {
   position: relative;
 }
-.planetPluto {
+.planetpluto {
   z-index: 10;
 }
 /* Netuno */
-.containerNeptuneCircle {
+.containerneptuneCircle {
   position: absolute;
 }
-.planetNeptune {
+.planetneptune {
   z-index: 10;
 }
 /* Urano */
-.containerUranusCircle {
+.containeruranusCircle {
   position: absolute;
 }
-.planetUranus {
+.planeturanus {
   z-index: 10;
 }
 /* Saturno */
-.containerSaturnCircle {
+.containersaturnCircle {
   position: absolute;
 }
-.planetSaturn {
+.planetsaturn {
   z-index: 10;
 }
 @-webkit-keyframes spin {
