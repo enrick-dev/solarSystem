@@ -97,7 +97,7 @@ planets.filter((planet, index) => {
   containerDiv.className = `containerCircle container${planet.name}Circle`
   contentDiv.className = `containerPlanets container${planet.name}`
   img.className = `planet${planet.name}`
-  img.src = `../assets/planets/${planet.name}.svg`
+  img.src = `./assets/planets/${planet.name}.svg`
   img.alt = `${planet.alt}`
 
 
