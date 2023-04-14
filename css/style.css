@@ -23,7 +23,7 @@ body .detailBackground {
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: left;
-  background-size: 89.2rem;
+  /* background-size: 89.2rem; */
   height: 100vh;
 }
 
@@ -33,7 +33,7 @@ body .detailBackground {
 .mainContainer {
   padding-top: 54px;
   display: grid;
-  grid-template-columns: 10rem 44.5fr 2fr 53.5fr 5rem;
+  /* grid-template-columns: 10rem 44.5fr 2fr 53.5fr 5rem; */
 }
 .mainContainer  .logoContainer {
   grid-column: 2/3;
@@ -50,9 +50,9 @@ body .detailBackground {
 
 
 /* logo */
-.logoImg {
-  /* width: 48.8rem; */
-}
+/* .logoImg {
+  width: 48.8rem;
+} */
 
 /* Introdução e Bem vindo */
 .introductionContainer {

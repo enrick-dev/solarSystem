@@ -1,13 +1,23 @@
+let gridMainScale = document.querySelector('.mainContainer')
+let detailBackground = document.querySelector('.detailBackground')
+
 
 // Calculo para responsividade usando de base uma tela 1920 //
 // 1920 = 97.6 = 100%
 // 19,20 = 0.976 = 1%
 let calcWindowSize = window.innerWidth / 19.20;
 
+let calcGridMainScale1 = calcWindowSize * 0.10;
+let calcGridMainScale2 = calcWindowSize * 0.05;
+gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1}rem 44.5fr 2fr 53.5fr ${calcGridMainScale2}rem`
+
+let calcDetailBackground = calcWindowSize * 0.892;
+detailBackground.style.backgroundSize = `${calcDetailBackground}rem`;
+
+
+
 let sizeBorderCalc = calcWindowSize * 0.916;
 let sizeSpaceBorderCalc = calcWindowSize * 0.090;
-
-
 const planets = [
   {
     name: 'pluto',
@@ -144,38 +154,37 @@ let solImg = document.querySelector('.sol');
 
 let calcLogoImgWidth = calcWindowSize * 0.488;
 let calcLogoImgHeight = calcWindowSize * 0.135;
+  logoImg.style.width = `${calcLogoImgWidth}rem`;
+  logoImg.style.height = `${calcLogoImgHeight}rem`;
 
 let calcTextContenth1 = calcWindowSize * 0.128;
 let calcTextContentp1 = calcWindowSize * 0.036;
 let calcTextContentp2 = calcWindowSize * 0.032;
 let calcTextContentp2Width = calcWindowSize * 0.709;
+  textContenth1.style.fontSize = `${calcTextContenth1}rem`;
+  textContentp1.style.fontSize = `${calcTextContentp1}rem`;
+  textContentp2.style.fontSize = `${calcTextContentp2}rem`;
+  textContentp2.style.width = `${calcTextContentp2Width}rem`;
+
 let calcClickTextContent = calcWindowSize * 0.005;
 let calcClickTextFont = calcWindowSize * 0.027;
 let calcClickTextWidth = calcWindowSize * 0.305;
+  clickTextContent.style.borderBottom = `${calcClickTextContent}rem solid #f2f2f2`;
+  clickText.style.fontSize = `${calcClickTextFont}rem`;
+  clickText.style.width = `${calcClickTextWidth}rem`;
+
 
 let calcContainerCircle = calcWindowSize * 0.036;
 let calcSolImgWidth = calcWindowSize * 0.3221;
 let calcSolImgHeight = calcWindowSize * 0.3221;
+  solImg.style.width = `${calcSolImgWidth}rem`;
+  solImg.style.width = `${calcSolImgHeight}rem`;
+
+  containerCircle.forEach(function(index) {
+    index.style.border = `${calcContainerCircle}px solid #f1f1f1`;
+  })
 
 
-logoImg.style.width = `${calcLogoImgWidth}rem`;
-logoImg.style.height = `${calcLogoImgHeight}rem`;
-
-textContenth1.style.fontSize = `${calcTextContenth1}rem`;
-textContentp1.style.fontSize = `${calcTextContentp1}rem`;
-textContentp2.style.fontSize = `${calcTextContentp2}rem`;
-textContentp2.style.width = `${calcTextContentp2Width}rem`;
-clickTextContent.style.borderBottom = `${calcClickTextContent}rem solid #f2f2f2`;
-clickText.style.fontSize = `${calcClickTextFont}rem`;
-clickText.style.width = `${calcClickTextWidth}rem`;
-
-// containerCircle.style.border = `${calcContainerCircle}px solid #f1f1f1`;
-solImg.style.width = `${calcSolImgWidth}rem`;
-solImg.style.width = `${calcSolImgHeight}rem`;
-
-containerCircle.forEach(function(index) {
-  index.style.border = `${calcContainerCircle}px solid #f1f1f1`;
-})
 
 
 // Responsividade
