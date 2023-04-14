@@ -63,7 +63,7 @@ body .detailBackground {
   user-select: none;
 }
 .textContent h1 {
-  font-size: 12.8rem;
+  /* font-size: 12.8rem; */
   text-transform: uppercase;
   font-weight: 400;
   line-height: 100%;
