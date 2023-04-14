@@ -139,7 +139,7 @@ planets.filter((planet, index) => {
 
 })
 
-// Escala, objetos diminuirem quando a tela dimiuir o width
+// Escala, objetos diminuirem quando a tela dimiuir o width //
 let logoImg = document.querySelector('.logoImg');
 
 let textContenth1 = document.querySelector('.textContent h1');
