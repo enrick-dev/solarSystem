@@ -51,7 +51,7 @@ body .detailBackground {
 
 /* logo */
 .logoImg {
-  width: 48.8rem;
+  /* width: 48.8rem; */
 }
 
 /* Introdução e Bem vindo */
@@ -69,14 +69,14 @@ body .detailBackground {
   line-height: 100%;
 }
 .textContent p:nth-child(2) {
-  font-size: 3.6rem;
+  /* font-size: 3.6rem; */
   font-weight: 400;
   color: #929AA1;
   text-align: end;
 }
 .textContent p:nth-child(3) {
-  width: 70.9rem;
-  font-size: 3.2rem;
+  /* width: 70.9rem; */
+  /* font-size: 3.2rem; */
   font-weight: 400;
   text-transform: uppercase;
   line-height: 100%;
@@ -84,9 +84,9 @@ body .detailBackground {
 }
 
 .clickTextContent {
-  width: 33.8rem;
+  /* width: 33.8rem; */
   padding-top: 3.9rem;
-  border-bottom: 0.5rem solid #f2f2f2;
+  /* border-bottom: 0.5rem solid #f2f2f2; */
   display: flex;
   justify-content: center;
   align-self: flex-end;
@@ -94,7 +94,7 @@ body .detailBackground {
 .clickTextContent p {
   color: #f2f2f2;
   width: 30rem;
-  font-size: 2.7rem;
+  /* font-size: 2.7rem; */
   font-weight: 400;
   text-transform: uppercase;
   line-height: 100%;
@@ -109,7 +109,7 @@ body .detailBackground {
 }
 
 .containerCircle {
-  border: 3.6px solid #f1f1f1; 
+  /* border: 3.6px solid #f1f1f1;  */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -164,8 +164,4 @@ body .detailBackground {
 .containerSol {
   position: absolute;
   user-select: none;
-}
-.containerSol img {
-  width: 32.21rem;
-  height: 32.21rem;
 }
