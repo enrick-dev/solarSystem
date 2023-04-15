@@ -14,7 +14,7 @@ html {
 body {
   background-image: url(../assets/background/background_stars.svg);
   background-color: #08182A;
-  background-size: 192rem;
+  /* background-size: 192rem; */
 
   font-family: "Jaldi";
 }

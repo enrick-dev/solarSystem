@@ -1,16 +1,27 @@
 let gridMainScale = document.querySelector('.mainContainer')
 let detailBackground = document.querySelector('.detailBackground')
+let backgroundStars =  document.querySelector('body');
 
+// Exemplo de uso
 
 // Calculo para responsividade usando de base uma tela 1920 //
 // 1920 = 97.6 = 100%
 // 19,20 = 0.976 = 1%
 let calcWindowSize = window.innerWidth / 19.20;
 
-let calcGridMainScale1 = calcWindowSize * 0.10;
-let calcGridMainScale2 = calcWindowSize * 0.05;
-gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1}rem 44.5fr 2fr 53.5fr ${calcGridMainScale2}rem`
+if(window.innerWidth < 500) {
+  let calcGridMainScale1 = calcWindowSize * 0.10;
+  let calcGridMainScale2 = calcWindowSize * 0.05;
+  gridMainScale.style.gridTemplateRows = `${calcGridMainScale1}rem 44.5fr 2fr 53.5fr ${calcGridMainScale2}rem`
+} else {
+  let calcGridMainScale1 = calcWindowSize * 0.10;
+  let calcGridMainScale2 = calcWindowSize * 0.05;
+  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1}rem 44.5fr 2fr 53.5fr ${calcGridMainScale2}rem`
+}
 
+
+let calcBackgroundStars = calcWindowSize * 1.92;
+backgroundStars.style.backgroundSize = `${calcBackgroundStars}rem`;
 let calcDetailBackground = calcWindowSize * 0.892;
 detailBackground.style.backgroundSize = `${calcDetailBackground}rem`;
 
@@ -188,6 +199,29 @@ let calcSolImgHeight = calcWindowSize * 0.3221;
 
 
 // Responsividade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // if(sizeWindowWidth < 1600) {
 
 
