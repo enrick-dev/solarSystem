@@ -205,6 +205,12 @@ let calcSolImgHeight = calcWindowSize * 0.3221;
 
 
 
+if(sizeWindowWidth < 900) {
+  let calcGridMainScale1 = calcWindowSize * 0.10;
+  let calcGridMainScale2 = calcWindowSize * 0.05;
+  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1}rem 1fr ${calcGridMainScale2}rem`
+  gridMainScale.style.gridTemplateRows = `${calcGridMainScale1}rem 44.5fr 2fr 53.5fr ${calcGridMainScale2}rem`
+}
 
 
 
