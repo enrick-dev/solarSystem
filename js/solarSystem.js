@@ -152,7 +152,7 @@ planets.filter((planet, index) => {
 
 })
 
-// Escala, objetos diminuirem quando a tela dimiuir o width //
+// Escala, objetos diminuirem quando a tela dimiuir o width
 let logoImg = document.querySelector('.logoImg');
 
 let textContenth1 = document.querySelector('.textContent h1');
@@ -210,9 +210,9 @@ let calcSolImgHeight = calcWindowSize * 0.3221;
 if(window.innerWidth < 900) {
   let calcWindowSize = window.innerWidth / 19.20;
   let calcGridMainScale1 = calcWindowSize * 0.20;
-  let calcGridMainScale2 = calcWindowSize * 0.20;
+  let calcGridMainScale2 = calcWindowSize * 0.10;
   // mudar de grid column para row
-  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1}rem 1fr ${calcGridMainScale2}rem`;
+  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1 / 2}rem 1fr ${calcGridMainScale2}rem`;
   gridMainScale.style.gridTemplateRows = `${calcGridMainScale1}rem 53.5fr 2fr 30fr ${calcGridMainScale2}rem`;
 
   gridMainScale.style.paddingTop = '10px'
