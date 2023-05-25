@@ -1,6 +1,8 @@
 let gridMainScale = document.querySelector('.mainContainer')
 let detailBackground = document.querySelector('.detailBackground')
 let backgroundStars =  document.querySelector('body');
+let solarContainer = document.querySelector('.solarContainer')
+let introductionContainer = document.querySelector('.introductionContainer')
 
 // Exemplo de uso
 
@@ -205,11 +207,21 @@ let calcSolImgHeight = calcWindowSize * 0.3221;
 
 
 
-if(sizeWindowWidth < 900) {
-  let calcGridMainScale1 = calcWindowSize * 0.10;
-  let calcGridMainScale2 = calcWindowSize * 0.05;
-  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1}rem 1fr ${calcGridMainScale2}rem`
-  gridMainScale.style.gridTemplateRows = `${calcGridMainScale1}rem 44.5fr 2fr 53.5fr ${calcGridMainScale2}rem`
+if(window.innerWidth < 900) {
+  let calcWindowSize = window.innerWidth / 19.20;
+  let calcGridMainScale1 = calcWindowSize * 0.20;
+  let calcGridMainScale2 = calcWindowSize * 0.20;
+  // mudar de grid column para row
+  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1}rem 1fr ${calcGridMainScale2}rem`;
+  gridMainScale.style.gridTemplateRows = `${calcGridMainScale1}rem 53.5fr 2fr 30fr ${calcGridMainScale2}rem`;
+
+  gridMainScale.style.paddingTop = '10px'
+  solarContainer.style.gridColumn = '2';
+  solarContainer.style.gridRow = '2';
+  
+  introductionContainer.style.gridColumn = '2';
+  introductionContainer.style.gridRow = '4';
+
 }
 
 
