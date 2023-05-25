@@ -37,63 +37,72 @@ const planets = [
     width: 0.0364,
     height: 0.0367,
     alt: 'Planeta Anão Plutão',
-    veloc: 7376 / 5.2
+    veloc: 7376 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Plutão'
   },
   {
     name: 'neptune',
     width: 0.0504,
     height: 0.0504,
     alt: 'Planeta Netuno',
-    veloc: 4537 / 5.2
+    veloc: 4537 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Netuno_(planeta)'
   },
   {
     name: 'uranus',
     width: 0.0544,
     height: 0.0544,
     alt: 'Planeta Urano',
-    veloc: 3006 / 5.2
+    veloc: 3006 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Urano_(planeta)'
   },
   {
     name: 'saturn',
     width: 0.1014,
     height: 0.0856,
     alt: 'Planeta Saturno',
-    veloc: 1503 / 5.2
+    veloc: 1503 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Saturno_(planeta)'
   },
   {
     name: 'jupiter',
     width: 0.0747,
     height: 0.0747,
     alt: 'Planeta Jupiter',
-    veloc: 816 / 5.2
+    veloc: 816 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Júpiter_(planeta)'
   },
   {
     name: 'marte',
     width: 0.0437,
     height: 0.0437,
     alt: 'Planeta Marte',
-    veloc: 249 / 5.2
+    veloc: 249 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Marte_(planeta)'
   },
   {
     name: 'terra',
     width: 0.0524,
     height: 0.0524,
     alt: 'Planeta Terra',
-    veloc: 152 / 5.2
+    veloc: 152 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Terra'
   },
   {
     name: 'venus',
     width: 0.0455,
     height: 0.0455,
     alt: 'Planeta Venus',
-    veloc: 108 / 5.2
+    veloc: 108 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Vénus_(planeta)'
   },
   {
     name: 'mercurio',
     width: 0.0375,
     height: 0.0375,
     alt: 'Planeta Mercurio',
-    veloc: 69 / 5.2
+    veloc: 69 / 5.2,
+    link: 'https://pt.wikipedia.org/wiki/Mercúrio_(planeta)'
   },
 ]
 
@@ -109,9 +118,11 @@ planets.filter((planet, index) => {
   let containerDiv = document.createElement('div');
   let contentDiv = document.createElement('div');
   let img = document.createElement('img');
+  let linkPlanet = document.createElement('a');
 
 
-  contentDiv.appendChild(img)
+  linkPlanet.appendChild(img)
+  contentDiv.appendChild(linkPlanet)
   containerDiv.appendChild(contentDiv);
   containerSolarSystem.appendChild(containerDiv);
 
@@ -121,7 +132,7 @@ planets.filter((planet, index) => {
   img.className = `planet${planet.name}`
   img.src = `./assets/planets/${planet.name}.svg`
   img.alt = `${planet.alt}`
-
+  linkPlanet.href = `${planet.link}`
 
   if(index > 0) {
     sizeBorderPlanets[index] = sizeBorderPlanets[index-1] - sizeSpaceBorderCalc;
@@ -209,8 +220,8 @@ let calcSolImgHeight = calcWindowSize * 0.3221;
 
 if(window.innerWidth < 900) {
   let calcWindowSize = window.innerWidth / 19.20;
-  let calcGridMainScale1 = calcWindowSize * 0.05;
-  let calcGridMainScale2 = calcWindowSize * 0.20;
+  let calcGridMainScale1 = calcWindowSize * 0.4;
+  let calcGridMainScale2 = calcWindowSize * 0.2;
   // mudar de grid column para row
   gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1 }rem 1fr ${calcGridMainScale1}rem`;
   gridMainScale.style.gridTemplateRows = `${calcGridMainScale2}rem 53.5fr 2fr 30fr ${calcGridMainScale2}rem`;
@@ -221,13 +232,7 @@ if(window.innerWidth < 900) {
   
   introductionContainer.style.gridColumn = '2';
   introductionContainer.style.gridRow = '4';
-
-  // Tamanho das fontes 
   
-  let calcTextContenth1 = calcWindowSize * 0.128;
-  let calcTextContentp1 = calcWindowSize * 0.036;
-  let calcTextContentp2 = calcWindowSize * 0.032;
-  let calcTextContentp2Width = calcWindowSize * 0.709;
 }
 
 
