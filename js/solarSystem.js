@@ -209,11 +209,11 @@ let calcSolImgHeight = calcWindowSize * 0.3221;
 
 if(window.innerWidth < 900) {
   let calcWindowSize = window.innerWidth / 19.20;
-  let calcGridMainScale1 = calcWindowSize * 0.20;
-  let calcGridMainScale2 = calcWindowSize * 0.10;
+  let calcGridMainScale1 = calcWindowSize * 0.05;
+  let calcGridMainScale2 = calcWindowSize * 0.20;
   // mudar de grid column para row
-  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1 / 2}rem 1fr ${calcGridMainScale2}rem`;
-  gridMainScale.style.gridTemplateRows = `${calcGridMainScale1}rem 53.5fr 2fr 30fr ${calcGridMainScale2}rem`;
+  gridMainScale.style.gridTemplateColumns = `${calcGridMainScale1 }rem 1fr ${calcGridMainScale1}rem`;
+  gridMainScale.style.gridTemplateRows = `${calcGridMainScale2}rem 53.5fr 2fr 30fr ${calcGridMainScale2}rem`;
 
   gridMainScale.style.paddingTop = '10px'
   solarContainer.style.gridColumn = '2';
@@ -222,6 +222,12 @@ if(window.innerWidth < 900) {
   introductionContainer.style.gridColumn = '2';
   introductionContainer.style.gridRow = '4';
 
+  // Tamanho das fontes 
+  
+  let calcTextContenth1 = calcWindowSize * 0.128;
+  let calcTextContentp1 = calcWindowSize * 0.036;
+  let calcTextContentp2 = calcWindowSize * 0.032;
+  let calcTextContentp2Width = calcWindowSize * 0.709;
 }
 
 
